@@ -8,17 +8,17 @@ const routes=[
 	{
 		name:"*",
 		path:"/",
-		component:require("./page/home/index.vue")
+		component:(resolve)=>require(['./page/home/index.vue'],resolve)
 	},
 	{
 		name:"home",
 		path:"/home",
-		component:require("./page/home/index.vue")
+		component:(resolve)=>require(['./page/home/index.vue'],resolve)
 	},
 	{
 		name:"user",
 		path:"/user",
-		component:require("./page/user/index.vue")
+		component:(resolve)=>require(['./page/user/index.vue'],resolve)
 	}
 ]
 
