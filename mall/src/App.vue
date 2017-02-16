@@ -9,6 +9,9 @@
     name:"app"
   }
 </script>
-<style type="text/css">
-  
+<style lang="scss">
+	@import '~mobi.css/src/mobi.scss';
+</style>
+<style lang="less">
+ 	@import './assets/css/iconfont.css';
 </style>
