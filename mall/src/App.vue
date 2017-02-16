@@ -17,5 +17,6 @@
  	#app{
  		position: absolute;
  		top: 0;left: 0;right: 0;bottom: 0;font-size:0.37rem;
+ 		letter-spacing:0.03rem;
  	}
 </style>
