@@ -2,6 +2,7 @@
 	<ul class="flex-middle body">
 		<li v-for="(item,index) in items" 
 			class="unit text-center item" 
+			@click="itemClick(index)"
 			:class="{'active':index==parseInt(curIndex)}">
 			<div class="iconfont item-icon" :class="'icon-i-'+item.icon"></div>
 			<div>{{item.label}}</div>
@@ -24,6 +25,21 @@
 					{icon:"rmb",label:"赚零花"},
 					{icon:"my",label:"我的"},
 				]
+			}
+		},
+		methods:{
+			itemClick(index){
+				switch(index){
+					case 0:
+					this.$router.push("home");
+					break;
+					case 1:
+					this.$router.push("user");
+					break;
+					case 2:
+					this.$router.push("user");
+					break;
+				}
 			}
 		}
 	}

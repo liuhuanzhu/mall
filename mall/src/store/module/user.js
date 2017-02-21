@@ -9,7 +9,8 @@ const USER_SET="user_set";
 const store={
 	state:{
 		user:{
-
+			id:'d345b4117e484e0bbed292018d94f604',
+			mbOpenId:'oWINev7aEuI-By-XhkhPrhhHNk3Q'
 		}
 	},
 	mutations:{
@@ -20,6 +21,9 @@ const store={
 	getters:{
 		user(state){
 			return state.user;
+		},
+		id(state){
+			return state.user.id
 		}
 	}
 }
